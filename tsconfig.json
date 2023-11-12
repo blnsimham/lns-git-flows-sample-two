@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "outDir": "build",
+    "target": "es6",
+    "baseUrl": "./",
+    "declaration": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmitOnError": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "strict": true,
+    "strictFunctionTypes": true,
+    "paths": {
+      "~src/*": ["./src/*"],
+      "~tests/*": ["./__tests__/*"]
+    }
+  },
+  "include": ["src/**/*", "__tests__/**/*", "scripts/**/*", "babel.config.js", "environment.d.ts"],
+  "exclude": ["node_modules/**", "**/*.spec.ts", "./build/", "test", "**/*.spec.ts", "**/*.test.ts"]
+}
